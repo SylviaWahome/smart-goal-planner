@@ -1,0 +1,25 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "title": "Buy a New Laptop",
+      "targetAmount": 800,
+      "currentAmount": 250,
+      "description": "Saving up for a new MacBook for school projects"
+    },
+    {
+      "id": 2,
+      "title": "Emergency Fund",
+      "targetAmount": 1000,
+      "currentAmount": 600,
+      "description": "Building an emergency cushion for unforeseen expenses"
+    },
+    {
+      "id": 3,
+      "title": "Travel to Mombasa",
+      "targetAmount": 300,
+      "currentAmount": 150,
+      "description": "Planning a trip during semester break"
+    }
+  ]
+}
