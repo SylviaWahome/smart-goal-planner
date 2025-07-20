@@ -3,7 +3,7 @@ import GoalForm from './components/GoalForm';
 import GoalList from './components/GoalList';
 import Overview from './components/Overview';
 
-const API_URL = 'http://localhost:4000/goals';
+const API_URL = 'https://smart-goal-planner.onrender.com/goals';
 
 function App() {
   const [goals, setGoals] = useState([]);
