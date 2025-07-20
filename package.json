@@ -4,11 +4,9 @@
   "private": true,
   "description": "Smart Goal Planner with React frontend and JSON Server backend",
   "homepage": "https://SylviaWahome.github.io/smart-goal-planner",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "server": "json-server --watch db.json --port 4000",
-    "react-start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -32,10 +30,21 @@
     "@testing-library/user-event": "^13.5.0"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
