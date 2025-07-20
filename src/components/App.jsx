@@ -8,7 +8,6 @@ const API_URL = 'https://smart-goal-planner.onrender.com/goals';
 function App() {
   const [goals, setGoals] = useState([]);
 
-  // Fetch goals on load
   useEffect(() => {
     fetch(API_URL)
       .then((r) => r.json())
@@ -16,7 +15,6 @@ function App() {
       .catch((err) => console.error('Fetch error:', err));
   }, []);
 
-  // Add new goal
   function handleAddGoal(newGoal) {
     fetch(API_URL, {
       method: 'POST',
@@ -27,14 +25,12 @@ function App() {
       .then((data) => setGoals([...goals, data]));
   }
 
-  // Delete goal
   function handleDeleteGoal(id) {
     fetch(`${API_URL}/${id}`, { method: 'DELETE' }).then(() =>
       setGoals(goals.filter((goal) => goal.id !== id))
     );
   }
 
-  // Update goal
   function handleUpdateGoal(id, updatedGoal) {
     fetch(`${API_URL}/${id}`, {
       method: 'PATCH',
