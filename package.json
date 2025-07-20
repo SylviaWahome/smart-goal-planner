@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Smart Goal Planner React App with JSON Server",
   "main": "server.js",
+  "homepage": "https://SylviaWahome.github.io/smart-goal-planner",
   "scripts": {
     "start": "node server.js",
     "client": "react-scripts start",
     "dev": "concurrently \"npm run start\" \"npm run client\"",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -22,6 +25,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.1"
   },
