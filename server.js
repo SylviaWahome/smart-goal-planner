@@ -1,4 +1,3 @@
-// server.js
 const jsonServer = require('json-server');
 const cors = require('cors');
 
@@ -8,10 +7,10 @@ const middlewares = jsonServer.defaults();
 
 const PORT = process.env.PORT || 4000;
 
-server.use(cors());
+server.use(cors()); // Allow all origins
 server.use(middlewares);
 server.use(router);
 
 server.listen(PORT, () => {
-  console.log(`✅ JSON Server is running on port ${PORT}`);
+  console.log(`JSON Server is running on port ${PORT}`);
 });

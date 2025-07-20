@@ -1,28 +1,25 @@
-# 💰 Smart Goal Planner
+# Smart Goal Planner API
 
-This is a personal finance app that helps you stay on track with your savings goals. You can set custom goals, add deposits, update your progress, and delete goals once completed or no longer needed. It also gives a simple overview of how much you’ve saved in total and how far you are with each goal.
+This is a mock backend for the Smart Goal Planner project.
 
----
+## Features
+- Stores financial goals in JSON format
+- Supports GET, POST, PATCH, DELETE
 
-## 🔧 Tech Stack
+## Usage
 
-- React (with hooks and components)
-- Tailwind CSS (for clean and responsive styling)
-- JSON Server (used to store the goal data)
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
----
+2. Start the server:
+   ```bash
+   npm start
+   ```
 
-## 📁 Project Structure
+3. Access data at:
+   - http://localhost:4000/goals
 
-```bash
-src/
-├── components/
-│   ├── GoalForm.jsx        # Form to add a new goal
-│   ├── GoalCard.jsx        # Displays each individual goal
-│   ├── GoalList.jsx        # Loops through and renders GoalCards
-│   ├── EditGoalForm.jsx    # Used to edit an existing goal
-│   └── Overview.jsx        # Shows overall savings summary
-├── App.jsx                 # Main app logic and routes
-├── index.js                # Entry point
-├── index.css               # Tailwind import
-db.json                     # Local mock API data
+## Hosting (Optional)
+You can deploy it to Render or any other backend platform.
