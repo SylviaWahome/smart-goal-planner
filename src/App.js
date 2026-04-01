@@ -72,7 +72,7 @@ function App() {
         🎯 Smart Goal Planner
       </h1>
 
-      <GoalForm onAdd={handleAddGoal} />
+      <GoalForm onAddGoal={handleAddGoal} />
 
       <div className="my-8">
         <Overview goals={goals} />
